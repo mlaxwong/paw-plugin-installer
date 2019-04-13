@@ -82,7 +82,7 @@ class Installer extends LibraryInstaller
         // Plugin class
         $class = isset($extra['class']) ? $extra['class'] : $defaultClass;
         $basePath = isset($extra['basePath']) ? $extra['basePath'] : $defaultBasePath;
-        $handle = isset($handle) ? $handle : null;
+        $handle = isset($extra['handle']) ? $extra['handle'] : null;
         $aliases = $this->generateDefaultAliases($package, $class, $basePath);
 
         if ($class === null) {
